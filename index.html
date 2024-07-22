@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar with Dropdown</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" id="home">Home</a>
+    <a href="#" id="news">News</a>
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#">Dashboard</a>
+            <a href="#">Logout</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+    <div class="navbar-right">
+        <a href="#" id="loginLink">Login</a>
+        <a href="#" id="signupLink">Sign Up</a>
+    </div>
+</div>
+<div id="homeContent" class="home-content">
+    <img src="" alt="Image" class="home-image">
+</div>
+<div id="homeContent" class="home-content">
+    <div class="title-cards">
+        <div class="title-card">
+            <img src="https://wallpapercave.com/uwp/uwp3520535.jpeg" alt="Image 1">
+            <h2>TRAVEL</h2>
+            <p>Make your dreams come true. Explore, Journey, Discover, Adventure. Making your heart want to return. Don'T Be A Tourist, Be A Traveler.</p>
+        </div>
+        <div class="title-card">
+            <img src="https://wallpapercave.com/uwp/uwp3520315.jpeg" alt="Image 2">
+            <h2>FOOD</h2>
+            <p>“Indulge in the flavors of precision and creativity.” “Dining reimagined, flavors redefined.” “Artistry on a plate, perfection in every bite.” “Experience culinary excellence, one plate at a time.”</p>
+        </div>
+        <div class="title-card">
+            <img src="https://wallpapercave.com/uwp/uwp4311830.png" alt="Image 3">
+            <h2>MOVIES</h2>
+            <p>You Won't Know The Facts Until You've Seen The Fiction.</p>
+        </div>
+        <div class="title-card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/8/863/677/typography-music-music-is-life-minimalism-wallpaper-preview.jpg" alt="Image 4">
+            <h2>MUSIC</h2>
+            <p>"Music, Unleash the Magic!" "Tune in to Your Groove" "Sounds That Make You Move" "The Rhythm of Life"</p>
+        </div>
+        <div class="title-card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/631/334/425/cristiano-ronaldo-real-madrid-sport-soccer-wallpaper-preview.jpg" alt="Image 5">
+            <h2>SPORTS</h2>
+            <p>Playing a sport is as much important as work, get involved in it! Playing sports is not time wasted, but time well spent! Be serious about the sport you play; you can master the game!</p>
+        </div>
+        <div class="title-card">
+            <img src="https://wallpapercave.com/uwp/uwp4361610.jpeg" alt="Image 6">
+            <h2>AUTHORS</h2>
+            <p>Stories are more effective than most other ways of relaying information, and the importance of storytelling goes far deeper than communication.</p>
+        </div>
+    </div>
+</div>
+
+<div id="loginInterface" class="form-container" style="display: none;">
+    <h2>Login</h2>
+    <form id="loginForm" class="form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<div id="signupInterface" class="form-container" style="display: none;">
+    <h2>Sign Up</h2>
+    <form id="signupForm" class="form">
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" name="signupUsername" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+<div id="writeInterface" class="form-container" style="display: none;">
+    <h2>MY BLOG</h2>
+    <textarea id="writeContent" rows="100" cols="100"></textarea>
+    <br>
+    <input type="submit" value="SAVE">
+</div>
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
